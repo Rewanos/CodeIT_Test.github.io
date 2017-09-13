@@ -1,0 +1,261 @@
+@import bourbon
+@import fonts.sass
+@import vars.sass
+
+@import "app/libs/Magnific-Popup/magnific-popup.sass"
+@import "app/libs/swiper/swiper.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "OpenSansRegular", sans-serif
+	overflow-x: hidden
+	background-color: #bdc0c3
+	
+
+h1,h2,h3,h4,h5,h6
+	font-family: "OpenSansLight", sans-serif
+	font-weight: normal
+
+h1
+	font-size: em(43)
+
+h2
+	font-size: em(34)
+
+h3,h4
+	font-size: em(29)
+
+.hidden
+	display: none
+
+
+
+.main-head
+	background-color: $blue
+	min-height: 60px
+
+
+
+
+.button
+	float: right
+	margin: 0.5%
+	margin-top: 7px
+	display: inline-block
+	border: none 
+	background-color: #707038
+	color: #fff
+	font-size: em(14px)
+	letter-spacing: 2px
+	padding: 8px 20px
+	border-radius: 5px
+	box-shadow: 0 4px 0 #4a4a24
+	transition: all .25s ease
+	&:hover, &:focus 
+		color: #fff 
+		text-decoration: none 
+	&:hover
+		background-color: #4a4a24
+	&:active
+		background-color: #4a4a24
+		transform: translateY(4px)
+
+.button-small
+	float: left 
+	padding: 9px 28px
+	font-size: em(13px)
+	background-color: $accent
+	box-shadow: 0px 4px 0px darken($accent, 6%)
+	&:hover
+		background-color: lighten($accent, 8%)
+		box-shadow: 0px 4px 0px darken($accent, 3%)
+	&:active, &:focus
+		background-color: darken($accent, 6%)
+		box-shadow: 0px 4px 0px darken($accent, 6%)
+
+.center
+	text-align: center
+	position: relative
+
+form.contact-form
+	padding: 26px
+	background-color: darken($blue, 5%)
+	height: 550px
+	max-width: 320px
+	margin: auto
+	box-shadow: rgba(0,0,0, .2) 0 0 20px
+	position: relative
+	overflow: hidden
+	.mfp-close
+		max-width: 320px
+		color: #fff
+	.button
+		margin-top: 25px
+	h4
+		text-align: center
+		font-size: em(14px)
+		color: #fff
+		margin-top: 0
+
+form 
+	label 
+		margin-bottom: 5px
+		display: block
+		span
+			font-size: 14px
+			color: #fff 
+			opacity: .4
+		input, select
+			background-color: rgba(255,255,255, .6)
+			border-radius: 2px
+			border: none 
+			padding: 5px
+			display: block
+			width: 100%
+			border-bottom: $blue 4px solid
+			transition: all .5s ease
+			&:focus 
+				border-bottom: lighten($blue, 10%) 4px solid
+	.checkbox
+		text-align: center
+		color: #fff 
+
+.success
+	color: #fff 
+	background-color: $blue 
+	position: absolute
+	z-index: 1
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	top: -100%
+	opacity: 0
+	+mt(.5s)
+	p
+		display: flex
+		margin: auto
+	&.active
+		top: 0
+		opacity: 1
+
+.numb
+	background-color: $blue
+	color: #fff
+	border-radius: 7px
+
+
+.ms-list
+	font-size: em(45px)
+	position: relative
+	list-style: none
+	margin: auto
+	width: 200px
+	height: 200px
+	display: block
+	border-radius: 100px
+	color: #fff
+	line-height: 190px
+	text-align: center
+	background: #68d
+	margin-bottom: 21px
+	
+
+
+.border, 
+	text-align: center
+
+	
+
+	&:hover
+		transition: all .3s ease
+		border: 7px solid #ECB124
+
+.companies
+	list-style: none
+	text-transform: uppercase
+	overflow-y: scroll;
+	max-height: 205px
+	width: 100%
+	li
+		border: 2px solid $blue
+		min-height: 30px;
+		line-height: 30px;
+		text-align: left
+		padding-left: 5px
+		color: #fff
+		&:hover
+			background-color: #afb3b7
+		 
+			
+
+		
+.partners
+	text-align: center
+
+.partners-wrapper h3
+	background-color: $blue
+	color: #fff
+
+
+.partners-wrapper, .partners-block
+	text-align: center
+	display: none
+	overflow-x: auto
+	white-space: nowrap	
+	margin: 0
+	padding: 0
+	> li 
+		display: none
+		&.active 
+			display: inline-block
+
+.block_part
+	display: inline-block
+
+	> li
+		position: relative
+		display: inline-block
+		margin: 10px 30px
+		font-size: em(20px)
+		color: #000
+		white-space: nowrap
+		> span
+			font-size: em(20px)
+			color: $accent
+
+#myChart
+	width: 10px
+	height: 10px
+
+
+
+.news
+	margin: auto
+	text-align: center
+	background-color: $blue
+	color: #fff
+
+.swiper-container
+	
+	height: 500px
+	
+	background-color: #bdc0c3
+	color: #000
+.swiper-wrapper
+	width: 100vh
+	height: 200px
+	margin: auto
+	
+.news-image
+	width: 50%
+	height: 100%
+	background-repeat: no-repeat
+	background-position: 50% 50%
+
+.news-text
+	
+	margin-top: -30px
